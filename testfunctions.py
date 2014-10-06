@@ -19,6 +19,11 @@ class TestFunctions(unittest.TestCase):
     def test_lambda(self):
         result = functions.adder_lambda(10, 20)
         self.assertEqual(result, 30)
+        
+    def test_class(self):
+        c = functions.Adder()
+        result = c(10, 20)
+        self.assertEqual(result, 30)
 
 # 7. (optional) for convenience, make the testing module "runnable", to run
 #    all the tests in this module.
