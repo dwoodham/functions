@@ -21,13 +21,10 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(result, 30)
         
     def test_class(self):
+        " a test case for the Class-based function "
         c = functions.Adder()
         result = c(10, 20)
         self.assertEqual(result, 30)
-
-    def test_class(self):
-        " a test case for the Class-based function "
-        pass
 
 # 7. (optional) for convenience, make the testing module "runnable", to run
 #    all the tests in this module.
